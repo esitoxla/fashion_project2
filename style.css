@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -11,22 +17,26 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding-top: 30px;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
 }
 
 .text-white {
     text-decoration: none;
-    color:whitesmoke;
+    color:black;
     font-weight: bolder;
-
 }
 
 #hero {
-    background-image: url(./assets/hero1.png);
-    height: 98vh;
-    width: 98vw;
-    background-size: cover;
+    background-image: url(./assets/bg_1.jpg);
+    height: 100vh;
+    width: 100%;
+    /* background-size: ; */
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-bar {
@@ -34,14 +44,19 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     width: 100%;
     height: 100%;
+    color: white;
+    padding-top: 50px;
+    margin-top: 50px;
+    
+    
 }
 
 .logo {
     font-size: 1.6rem;
-    color: whitesmoke;
+    color: black;
     font-weight: bolder;
 }
 
@@ -56,7 +71,7 @@ nav {
 }
 
 .wed-image {
-width: 50%;
+    width: 50%;
 }
 
 .wed-image img {
@@ -64,11 +79,140 @@ width: 50%;
 }
 
 .couple {
-    color: whitesmoke;
+    color:white;
     font-style: italic;
     font-size: 4rem;
+    padding:50px 50px;
+    margin: 50px;
+    height: 100%;
+    width: 90%;
+    text-align: center;
 }
 
 .wedding {
-color: whitesmoke;
+    color: #999999;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.wedding-details {
+    color: #999999; 
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 30px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.couple-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(./assets/2.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 98vw;
+}
+
+.bride-groom {
+    color: #999999;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-style: italic;
+    padding-top: 70px;
+}
+
+.bride-groom-dt {
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    column-gap: 60px;
+    width: 60%;
+    height: 80vh;
+}
+
+.groom-overlay {
+    background-image: url(./assets/groom3.png);
+    background-size: cover;
+    height: 100%;   
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.bride-overlay {
+    background-image: url(./assets/bride4.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border-color: #F67E7D;
+}
+
+.groom-overlay:hover {
+    opacity: 0.5;
+    color: white;
+}
+
+.bride-overlay:hover {
+    opacity: 0.5;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    background-color: #999999;
+    height: 50vh;
+    color: white;
+    
+}
+.links-a {
+    display: flex;
+    text-decoration: none;
+    color:white;
+    font-weight: bolder;
+    row-gap: 30px
+}
+
+.question {
+    display: flex;
+    flex-direction: column;   
+}
+
+.form {
+    
+    height: 100vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    row-gap: 20px;
+    background-image: url(./assets/formbg.png);
+    background-size: cover;
+    
+}
+.form h1 {
+    /* padding: 60px; */
+}
+
+.guest-form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* padding: 60px; */
+    width: 40%;
+    border: none;
+    /* border-bottom: 50px; */
 }
