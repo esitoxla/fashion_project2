@@ -192,7 +192,6 @@ nav {
 }
 
 .form {
-    
     height: 100vh;
     width: 99vw;
     display: flex;
@@ -215,4 +214,9 @@ nav {
     width: 40%;
     border: none;
     /* border-bottom: 50px; */
+}
+
+.invite {
+    margin-top: 40px;
+    border
 }
